@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap");
+:root{
+    --bg-color: #131419;
+    --primary-font-color: #c7c7c7;
+    --secondary-font-color: #03a9f4;
+    --soft-high-light: rgba(255, 255, 255, .05);
+    --dark-high-light: rgba(0, 0, 0, .51);
+}
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-image: linear-gradient(65.9deg, rgba(85, 228, 224, 1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64, 1198,238,1) 55.2%, rgba(177, 36, 224, 1) 98.4%);
+    color: var(--primary-font-color);
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Odibee Sans";
+    font-size: 16px;
+}
+.calculator{
+    background: var(--bg-color);
+    color: var(--primary-font-color);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "display display display display" "c signed percent divide" "seven eight nine times" "four five six minus" "one two three plus" "zero zero decimal equals";
+    align-items: center;
+    justify-content: center;
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    border-radius: 20px;
+    padding: 50px 40px 40px 40px;
+}
+.display {
+    box-shadow: 6px 6px 16px 0 var(--dark-high-light), -6px -6px 16px 0 var(--soft-high-light), inset 6px 6px 5px 0 var(--dark-high-light), inset -6px -6px 5px 0 var(--soft-high-light);
+    border: 5px solid var(--soft-high-light);
+    color: var(--secondary-font-color);
+    border-radius: 12px;
+    transition: 0.1s all ease-in-out;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    padding-right: 20px;
+    width: 100%;
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+.neumorphic {
+    box-shadow: 6px 6px 16px 0 var(--dark-high-light), -6px -6px 16px 0 var(--soft-high-light);
+    border-radius: 50%;
+    transition: 0.1s all ease-in-out;
+    border: 1px solid var(--soft-high-light);
+  }
+  
+.neumorphic:hover {
+    box-shadow: inset 6px 6px 5px 0 var(--dark-high-light), inset -6px -6px 5px 0 var(--soft-high-light);
+    color: var(--secondary-font-color);
+  }
+.c, .signed, .percent, .divide, .seven, .eight, .nine, .times, .four, .five, .six, .minus, .one, .two, .three, .plus, .zero, .decimal, .equals {
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  
+.zero {
+    width: 100%;
+    border-radius: 12px;
+  }
+  .display {
+    grid-area: display;
+  }
+  
+  .c {
+    grid-area: c;
+  }
+  
+  .signed {
+    grid-area: signed;
+  }
+  
+  .percent {
+    grid-area: percent;
+  }
+  
+  .divide {
+    grid-area: divide;
+  }
+  
+  .seven {
+    grid-area: seven;
+  }
+  
+  .eight {
+    grid-area: eight;
+  }
+  
+  .nine {
+    grid-area: nine;
+  }
+  
+  .times {
+    grid-area: times;
+  }
+  
+  .four {
+    grid-area: four;
+  }
+  
+  .five {
+    grid-area: five;
+  }
+  
+  .six {
+    grid-area: six;
+  }
+  
+  .minus {
+    grid-area: minus;
+  }
+  
+  .one {
+    grid-area: one;
+  }
+  
+  .two {
+    grid-area: two;
+  }
+  
+  .three {
+    grid-area: three;
+  }
+  
+  .plus {
+    grid-area: plus;
+  }
+  
+  .zero {
+    grid-area: zero;
+  }
+  
+  .decimal {
+    grid-area: decimal;
+  }
+  
+  .equals {
+    grid-area: equals;
+  }
